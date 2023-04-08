@@ -19,3 +19,8 @@ print `F5`
 - less
 - babel
 - Electron
+
+## script
+
+- `npm run dist`: build a distribution version
+- `npm run pack`: build a package, not installer
