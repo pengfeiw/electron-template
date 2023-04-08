@@ -4,12 +4,12 @@
     "description": "Electron Template",
     "main": "./src/electron/main.js",
     "scripts": {
-        "start": "electron-forge start",
+        "start": "npm run build && electron-forge start",
         "build": "npm run clear && webpack --config ./webpack.prd.config.js",
-        "clear": "rm -rf ./build/",
+        "clear": "rm -rf ./build/ ./out/",
         "dev:page": "webpack server --config ./webpack.dev.config.js",
-        "package": "electron-forge package",
-        "make": "electron-forge make"
+        "package": "npm run build && electron-forge package",
+        "make": "npm run build && electron-forge make"
     },
     "author": "pengfeixc",
     "license": "ISC",
