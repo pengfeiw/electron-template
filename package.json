@@ -1,0 +1,47 @@
+{
+    "name": "electron-template",
+    "version": "1.0.0",
+    "description": "Electron Template",
+    "main": "./src/electron/main.js",
+    "scripts": {
+        "start": "electron-forge start",
+        "build": "npm run clear && webpack --config ./webpack.prd.config.js",
+        "clear": "rm -rf ./build/",
+        "dev:page": "webpack server --config ./webpack.dev.config.js",
+        "package": "electron-forge package",
+        "make": "electron-forge make"
+    },
+    "author": "pengfeixc",
+    "license": "ISC",
+    "dependencies": {
+        "babel-loader": "^9.1.2",
+        "electron-squirrel-startup": "^1.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.21.3",
+        "@babel/preset-env": "^7.20.2",
+        "@babel/preset-react": "^7.18.6",
+        "@babel/preset-typescript": "^7.21.0",
+        "@electron-forge/cli": "^6.1.1",
+        "@electron-forge/maker-deb": "^6.1.1",
+        "@electron-forge/maker-rpm": "^6.1.1",
+        "@electron-forge/maker-squirrel": "^6.1.1",
+        "@electron-forge/maker-zip": "^6.1.1",
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "css-loader": "^6.7.3",
+        "electron": "^24.0.0",
+        "html-webpack-plugin": "^5.5.0",
+        "less-loader": "^6.2.0",
+        "style-loader": "^3.3.2",
+        "ts-loader": "^9.4.2",
+        "typescript": "^5.0.2",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.76.2",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.13.0",
+        "webpack-merge": "^5.8.0"
+    }
+}
