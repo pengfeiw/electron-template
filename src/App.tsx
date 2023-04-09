@@ -3,7 +3,7 @@ import "./App.less";
 
 const App = () => {
     return (
-        <div className="title">React HelloWorld</div>
+        <div className="title">Electron Template</div>
     );
 };
 
